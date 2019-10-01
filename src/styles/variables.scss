@@ -1,0 +1,26 @@
+$white: #ffffff;
+$white-opacity-10: rgba(255, 255, 255, 0.1);
+$white-opacity-25: rgba(255, 255, 255, 0.25);
+$white-opacity-50: rgba(255, 255, 255, 0.5);
+
+$green: #00c583;
+$green-light: #80e3c2;
+$dark-blue: #252957;
+$purple: #4a0067;
+$grey: #a9aabc;
+$grey-light: #eff2f7;
+$grey-dark: #8c8ea6;
+$pink-light: #c09ecd;
+// Default breakpoints for all elements and for media query min-width
+$screen-xs: 480px !default;
+$screen-md: 992px !default;
+
+$media-max-screen-xs: $screen-xs - 1px !default;
+$media-max-screen-md: $screen-md - 1px !default;
+
+$max-content-width: 960px;
+
+// Line height
+$base-line-height: 1.1;
+
+$font-family: "Avenir Next", Helvetica, Arial, sans-serif;
