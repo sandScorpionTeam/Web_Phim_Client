@@ -2,25 +2,18 @@ $white: #ffffff;
 $white-opacity-10: rgba(255, 255, 255, 0.1);
 $white-opacity-25: rgba(255, 255, 255, 0.25);
 $white-opacity-50: rgba(255, 255, 255, 0.5);
+$white-dark: #abb7c4;
 
-$green: #00c583;
-$green-light: #80e3c2;
-$dark-blue: #252957;
-$purple: #4a0067;
-$grey: #a9aabc;
-$grey-light: #eff2f7;
-$grey-dark: #8c8ea6;
-$pink-light: #c09ecd;
+$blue:#1476b8;
+$blue-purple: #1430b8;
+$red: #b81414;
+$dark-black: #020d18;
+$dark-black-light: #071829;
+
 // Default breakpoints for all elements and for media query min-width
 $screen-xs: 480px !default;
 $screen-md: 992px !default;
 
-$media-max-screen-xs: $screen-xs - 1px !default;
-$media-max-screen-md: $screen-md - 1px !default;
-
-$max-content-width: 960px;
-
 // Line height
 $base-line-height: 1.1;
-
-$font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+$font-family: "Nunito", Helvetica, Arial, sans-serif;
