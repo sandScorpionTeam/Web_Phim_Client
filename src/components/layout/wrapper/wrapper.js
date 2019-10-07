@@ -1,10 +1,15 @@
-import React from 'react'
-import "./wrapper.scss"
+import React from 'react';
+import "./wrapper.scss";
+import SearchBar from 'components/search-bar/search-bar';
+import Movies from 'components/movies/movies-list';
+import Pagination from 'components/pagination/pagination';
 
 const Wrapper = () => {
   return (
     <main className="page-content">
-      This is the main body
+      <SearchBar />
+      <Movies />
+      <Pagination />
     </main>
   )
 }

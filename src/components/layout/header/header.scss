@@ -27,7 +27,11 @@
     }  
 
     nav.primary-menu {
-      display: block;      
+      &.open {
+        display: block;  
+      }
+      
+      display: none;      
       background-color: $dark-black-light;
       padding-left: 2em;      
       .left-menu {
@@ -79,11 +83,9 @@
         right: 0;
         display: block;
         content: '\2261';
-        text-indent: 0
+        text-indent: 0;
       }
     }
-
-
   }
 }
 

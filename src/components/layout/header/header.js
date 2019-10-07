@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
+import clsx from 'clsx';
 import "./header.scss"
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
     <header className="header-layout header-theme">
       <div className="container">
@@ -12,7 +15,7 @@ const Header = () => {
             <span className="logo-text">film it</span>
           </a>
         </div>        
-        <nav className="primary-menu">
+        <nav className={clsx('primary-menu', {'open':openMenu})} >
           <ul className="left-menu">
             <li>
               <a href="/home">Home</a>
@@ -41,7 +44,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="collapse-button">toogle menu</button>
+        <button className="collapse-button" onClick={() => setOpenMenu(!openMenu)}>toogle menu</button>
       </div>
     </header>
   )
