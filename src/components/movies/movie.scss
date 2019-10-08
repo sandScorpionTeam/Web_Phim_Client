@@ -1,8 +1,61 @@
 @import "styles/variables.scss";
 @import "styles/general-mixins.scss";
 
-.movie {
-  width: 5em;
-  height: 4em;
-  background-color: grey;
+.movies-list{
+  overflow: hidden;
+}
+
+.movies-list::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.movie-item {
+  width: 10rem;
+  height: 15rem;
+  padding: 0.1em;
+  margin: 0.1em;
+  display: block;
+  float: left;
+  background-color: $dark-black-light;
+  text-decoration: none;
+
+  .block-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .movie-thumbnail {
+      flex: 0 0 70%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      };
+    }
+  
+    .movie-meta {
+      flex: 1 1 30%;
+      display: flex;
+      flex-direction: column;
+      padding: 0.4em 0.8em;
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 1em;
+        margin: 0;
+        color: #44e2ff;
+      }
+      .movie-title2 {
+        font-size: 0.8em;
+        color: $white;
+      }
+      .movie-duration {
+        font-size: 0.8em;
+        color: $white;
+      }
+    }
+  }
 }
