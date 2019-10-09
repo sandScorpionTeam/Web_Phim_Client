@@ -5,12 +5,13 @@
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 300;
-  src: url(../public/fonts//Nunito-Regular.ttf) format('truetype');
+  src: url(../public/fonts/Nunito-Regular.ttf) format('truetype');
 }
-/* latin-ext */
+
+/* vietnamese */
 @font-face {
-  font-family: 'Nunito';
+  font-family: 'Dosis';
   font-style: normal;
-  font-weight: 300;
-  src: url(../public/fonts/Nunito-Light.ttf) format('truetype');
+  font-weight: 400;
+  src: url(../public/fonts/Dosis-Bold.ttf) format('truetype');
 }

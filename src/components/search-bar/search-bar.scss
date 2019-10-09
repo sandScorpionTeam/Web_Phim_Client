@@ -3,7 +3,9 @@
 
 .search-bar{
   background-color: $dark-black-light;
-  padding: 0.2em 1em;  
+  margin-top: 0.2em;
+  padding-left: 2em;
+  padding-right: 2em;  
   form {
     display: flex;
     select {

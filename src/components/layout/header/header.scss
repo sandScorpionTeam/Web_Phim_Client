@@ -33,17 +33,24 @@
       
       display: none;      
       background-color: $dark-black-light;
-      padding-left: 2em;      
+      padding-left: 2em;  
+      padding-right: 2em;  
+      font-family: $font-menu;
+      font-weight: bold;
+      
       .left-menu {
         margin: 0;
         padding-left:0;
         list-style: none;
         li>a {
-          display: block;
-          padding: 0.4em 1em;
+          display: inline-block;
+          padding: 0.4em 0;
           color: $white-dark;
           font-weight: normal;
           text-transform: uppercase;
+        }
+        li + li {
+          margin-top: 0.2em;
         }
       }
       .right-menu {
@@ -51,11 +58,26 @@
         padding-left:0;
         list-style: none;
         li>a {
-          display: block;
+          display: inline-block;
           padding: 0.4em 1em;
           color: $white-dark;
           font-weight: normal;
           text-transform: uppercase;
+        }
+
+        li + li {
+          margin-top: 0.2em;
+        }
+
+        .login-btn>a{
+          background-color: #dd003f;
+          color: white;
+          border-radius: 0.3em;
+        }
+        .register-btn>a{
+          background-color: #dd003f;
+          color: white;
+          border-radius: 0.3em;
         }
       }
     }
@@ -84,6 +106,42 @@
         display: block;
         content: '\2261';
         text-indent: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-xs){  
+  .header-layout {
+    font-size: 0.8em;
+    .container {    
+      nav.primary-menu {
+        &.open {
+          display: flex;
+        }
+        display: flex;
+        justify-content: space-between;
+
+        .left-menu {
+          display: flex;
+          li>a{
+            padding-right: 2em;
+          }
+          li + li {
+            margin-top: 0;
+            margin-left: 0.2em;
+          }
+        }
+        .right-menu {
+          display: flex;
+          li + li {
+            margin-top: 0;
+            margin-left: 0.2em;
+          }
+        }
+      }
+      .collapse-button{
+        display: none;
       }
     }
   }

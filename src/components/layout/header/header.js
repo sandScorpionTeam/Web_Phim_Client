@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import clsx from 'clsx';
+import SearchBar from 'components/search-bar/search-bar';
 import "./header.scss"
 
 const Header = () => {
@@ -40,12 +41,16 @@ const Header = () => {
           </ul>          
           <ul className="right-menu">
             <li className="login-btn">
-              <a href="/login">Login</a>
+              <a href="/login">Login</a>              
+            </li>
+            <li className="register-btn">
+              <a href="/Register">Register</a>              
             </li>
           </ul>
         </nav>
         <button className="collapse-button" onClick={() => setOpenMenu(!openMenu)}>toogle menu</button>
       </div>
+      <SearchBar />
     </header>
   )
 }

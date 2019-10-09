@@ -12,9 +12,12 @@ $dark-black: #020d18;
 $dark-black-light: #071829;
 
 // Default breakpoints for all elements and for media query min-width
-$screen-xs: 480px !default;
-$screen-md: 992px !default;
+//xs: 480px - 30em
+//md: 992px - 62em
+$screen-xs: 30em;
+$screen-md: 62em;
 
 // Line height
 $base-line-height: 1.1;
 $font-family: "Nunito", Helvetica, Arial, sans-serif;
+$font-menu: "Dosis", Helvetica, Arial, sans-serif;
