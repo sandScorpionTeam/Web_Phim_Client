@@ -1,8 +1,10 @@
 @import "styles/variables.scss";
 @import "styles/general-mixins.scss";
 
-.movies-list{
+.movies-list {
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .movies-list::after{
@@ -12,14 +14,36 @@
 }
 
 .movie-item {
-  width: 10rem;
-  height: 15rem;
-  padding: 0.1em;
-  margin: 0.1em;
-  display: block;
-  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 1em;
+  display: block;  
   background-color: $dark-black-light;
   text-decoration: none;
+
+  @media (max-width: $screen-tb){
+    &.is-half-mobile{
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $screen-tb){
+    &.is-one-third-tablet{
+      width: 33.3333%;
+    }
+  }
+
+  @media (min-width: $screen-dt){
+    &.is-one-quarter-desktop{
+      width: 25%;
+    }
+  }
+
+  @media (min-width: $screen-hd){
+    &.is-one-fifth-fullhd{
+      width: 20%;
+    }
+  }
 
   .block-wrapper{
     height: 100%;
@@ -27,17 +51,15 @@
     flex-direction: column;
     
     .movie-thumbnail {
-      flex: 0 0 70%;
       overflow: hidden;
       img {
         width: 100%;
-        height: 100%;
+        height: 100%;        
         object-fit: cover;
       };
     }
   
     .movie-meta {
-      flex: 1 1 30%;
       display: flex;
       flex-direction: column;
       padding: 0.4em 0.8em;

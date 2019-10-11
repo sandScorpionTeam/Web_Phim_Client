@@ -12,10 +12,14 @@ $dark-black: #020d18;
 $dark-black-light: #071829;
 
 // Default breakpoints for all elements and for media query min-width
-//xs: 480px - 30em
-//md: 992px - 62em
+//mobile: 480px - 30em
+//tablet: 768px - 48em
+//desktop: 1024px - 64em
+//fullhd: 1408px - 88em
 $screen-xs: 30em;
-$screen-md: 62em;
+$screen-tb: 48em;
+$screen-dt: 64em;
+$screen-hd: 88em;
 
 // Line height
 $base-line-height: 1.1;
