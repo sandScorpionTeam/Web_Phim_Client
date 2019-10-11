@@ -2,5 +2,23 @@
 @import "styles/general-mixins.scss";
 
 .footer-layout {
-  height: 105px;
+  border-top: 2px solid #1e2c3b;  
+  background-color: $dark-black-light;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  color: $grey-light;
+  .copy-right{    
+    font-size: 0.8em;
+  }
+  .contact{
+    h5{
+      margin-top: 0;
+      margin-bottom: 0.3em;
+    }
+    span {
+
+    }
+  }
+
 }
