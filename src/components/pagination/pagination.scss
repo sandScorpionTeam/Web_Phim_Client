@@ -1,0 +1,28 @@
+@import "styles/variables.scss";
+@import "styles/general-mixins.scss";
+
+.pagination{
+  ul{
+    list-style: none;
+    padding-left: 1em;
+    display: flex;    
+    li>a {
+      display: inline-flex;
+      justify-content: center;      
+      align-items: center;      
+      font-size: 1em;
+      width: 2em;
+      height: 2em;
+      border: 1px $white solid;
+      background-color: $blue;
+      border-radius: 0.1em;      
+      cursor: pointer; 
+    }
+    li.active>a{
+      color: $yellow;
+    }
+    li+li{
+      margin-left: 0.5em;
+    }
+  }
+}

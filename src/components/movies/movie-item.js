@@ -10,14 +10,14 @@ const Movie = () => {
       'is-one-third-tablet',
       'is-half-mobile')}
       title="Đốt - Burn" href="/">
-      <div class="block-wrapper">
-        <div class="movie-thumbnail">
+      <div className="block-wrapper">
+        <div className="movie-thumbnail">
           <img src="http://lorempixel.com/200/300/" alt="Đốt - Burn"/>
         </div>
-        <div class="movie-meta">
-          <h3 class="movie-title1">Đốt</h3>
-          <span class="movie-title2">Burn</span>
-          <span class="movie-duration">120 phút</span>
+        <div className="movie-meta">
+          <h3 className="movie-title1">Đốt</h3>
+          <span className="movie-title2">Burn</span>
+          <span className="movie-duration">120 phút</span>
         </div>
       </div>      
     </a>
