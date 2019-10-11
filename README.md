@@ -23,5 +23,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 
 ### Docker
-Run app on port 80
+Run app on local port 80 <br>
+```
 docker-compose up -d
+```
+
+Deploy app on prod <br>
+```
+eval $(docker-machine env filmitclient) 
+docker-compose up -d
+```
