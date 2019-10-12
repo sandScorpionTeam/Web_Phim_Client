@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
-import films from "./films";
+import movies from "./movies";
+import pager from "./pager";
 import auth from "./auth";
 
 const rootReducer = combineReducers({
-  films, auth
+  movies, pager, auth
 });
 
 export default rootReducer;
